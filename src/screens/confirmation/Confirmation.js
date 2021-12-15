@@ -98,6 +98,7 @@ const Confirmation = (props) => {
 
   const { classes } = props;
 
+  // confirmation object
   return (
     <div className="Details">
       <Header />
@@ -268,4 +269,4 @@ Confirmation.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Confirmation);
+export default withStyles(styles)(Confirmation); 

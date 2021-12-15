@@ -64,6 +64,7 @@ const BookShow = (props) => {
       });
   }, []);
 
+  // location handler
   const locationChangeHandler = (event) => {
     setLocation(event.target.value);
     let newTheatres = [];
@@ -82,6 +83,7 @@ const BookShow = (props) => {
     setTheatres(newTheatres);
   };
 
+  // theatre handler
   const theatreChangeHandler = (event) => {
     setTheatre(event.target.value);
 
@@ -102,6 +104,7 @@ const BookShow = (props) => {
     setLanguages(newLanguages);
   };
 
+  // language handler
   const languageChangeHandler = (event) => {
     setLanguage(event.target.value);
 
@@ -123,6 +126,7 @@ const BookShow = (props) => {
     setShowDates(newShowDates);
   };
 
+  // date handler
   const showDateChangeHandler = (event) => {
     setShowDate(event.target.value);
 
@@ -149,6 +153,7 @@ const BookShow = (props) => {
     setTickets(event.target.value.split(","));
   };
 
+  // book show handler
   const bookShowButtonHandler = () => {
     location === "" ? setReqLocation("dispBlock") : setReqLocation("dispNone");
     theatre === "" ? setReqTheatre("dispBlock") : setReqTheatre("dispNone");
